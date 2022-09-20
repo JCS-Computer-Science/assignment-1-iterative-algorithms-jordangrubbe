@@ -2,7 +2,6 @@ function selectionSort(array) {
 	let number = array.length;
         
     for(let i = 0; i < number; i++) {
-        // Finding the smallest number in the subarray
         let smallest = i;
         for(let j = i+1; j < number; j++){
             if(array[j] < array[smallest]) {
@@ -10,7 +9,6 @@ function selectionSort(array) {
             }
          }
          if (smallest != i) {
-             // Swapping the elements
              let tmp = array[i]; 
              array[i] = array[smallest];
              array[smallest] = tmp;      
