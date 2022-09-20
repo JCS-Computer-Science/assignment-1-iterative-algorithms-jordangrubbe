@@ -1,4 +1,19 @@
 function binarySearch(array, searchTerm) {
+	let beginning = 0;
+    let end = array.length - 1;
+
+    while (beginning <= end) {
+        let centre = Math.floor((beginning + end) / 2);
+
+        if (array[centre] === searchTerm) {
+            return centre;
+        } else if (array[centre] < searchTerm) {
+            beginning = centre + 1;
+        } else {
+            end = centre - 1;
+        }
+    }
+    return -1;
 	/*
 	 ** Check the middle element, if it's higher than the searchTerm
 	 ** then check the element in between the start and the middle, otherwise
