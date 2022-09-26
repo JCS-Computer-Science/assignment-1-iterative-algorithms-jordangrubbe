@@ -1,7 +1,7 @@
 function linearSearch(array, searchTerm) {
-	for(let i = 0; i < array.length; i++){
-        if(array[i] === searchTerm){
-            return i
+	for(let a = 0; a < array.length; a++){
+        if(array[a] === searchTerm){
+            return a
         }
     }
 	/*

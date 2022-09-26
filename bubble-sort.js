@@ -1,14 +1,14 @@
 function bubbleSort(array) {
-    let number = array.length;
     let sorted = false;
-        
+    let number = array.length;
+    
     while (!sorted) {
         sorted = true;
-        for(let i = 0; i < number; i++){
-            if(array[i] > array[i+1]){
-                let bubble = array[i];
-                array[i] = array[i+1];
-                array[i+1] = bubble;
+        for(let a = 0; a < number; a++){
+            if(array[a] > array[a+1]){
+                let bubble = array[a];
+                array[a] = array[a+1];
+                array[a+1] = bubble;
                 sorted = false;
             }
         }

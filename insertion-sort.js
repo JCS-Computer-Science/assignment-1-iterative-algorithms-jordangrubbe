@@ -1,8 +1,8 @@
 function insertionSort(array) {
 	let digit = array.length;
-        for (let i = 1; i < digit; i++) {
-            let currentDigit = array[i];
-            let insertion = i-1; 
+        for (let a = 1; a < digit; a++) {
+            let insertion = a-1;
+            let currentDigit = array[a];
             while ((insertion > -1) && (currentDigit < array[insertion])) {
                 array[insertion+1] = array[insertion];
                 insertion--;

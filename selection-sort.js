@@ -1,17 +1,17 @@
 function selectionSort(array) {
 	let number = array.length;
         
-    for(let i = 0; i < number; i++) {
-        let smallest = i;
-        for(let j = i+1; j < number; j++){
-            if(array[j] < array[smallest]) {
-                smallest=j; 
+    for(let a = 0; a < number; a++) {
+        let smallest = a;
+        for(let b = a+1; b < number; b++){
+            if(array[b] < array[smallest]) {
+                smallest=b; 
             }
          }
-         if (smallest != i) {
-             let tmp = array[i]; 
-             array[i] = array[smallest];
-             array[smallest] = tmp;      
+         if (smallest != a) {
+             let selection = array[a]; 
+             array[a] = array[smallest];
+             array[smallest] = selection;      
         }
     }
 	/*

@@ -1,7 +1,7 @@
 function binarySearch(array, searchTerm) {
-	let beginning = 0;
-    let end = array.length - 1;
-
+	let end = array.length - 1;
+    let beginning = 0;
+    
     while (beginning <= end) {
         let centre = Math.floor((beginning + end) / 2);
 
